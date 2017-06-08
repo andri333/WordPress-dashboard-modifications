@@ -1,0 +1,6 @@
+function wpb_user_count() {
+$usercount = count_users();
+$result = $usercount['total_users'];
+return $result;
+}
+add_shortcode('user_count', 'wpb_user_count');
